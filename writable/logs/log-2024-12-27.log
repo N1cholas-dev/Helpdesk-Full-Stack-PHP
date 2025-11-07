@@ -1,0 +1,396 @@
+INFO - 2024-12-27 01:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 01:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 01:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 06:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 06:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 06:37:19 --> ErrorException: Undefined variable $requestByList
+[Method: GET, Route: helpdesk/create]
+in APPPATH\Views\helpdesk\create.php on line 66.
+ 1 APPPATH\Views\helpdesk\create.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $requestByList', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\create.php', 66)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/create', [], true)
+ 5 APPPATH\Controllers\HelpdeskController.php(61): view('helpdesk/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+ERROR - 2024-12-27 06:48:31 --> mysqli_sql_exception: Unknown column 'request_by.name' in 'field list' in C:\Xampp\htdocs\helpdesk - Copy\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk - Copy\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `tickets...', 0)
+#1 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tickets...')
+#2 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tickets...')
+#3 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tickets...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk - Copy\app\Models\HelpdeskTicketModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk - Copy\app\Controllers\HelpdeskController.php(26): App\Models\HelpdeskTicketModel->getTicketsWithDetails()
+#6 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+#7 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+#8 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk - Copy\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk - Copy\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk - Copy\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk - Copy\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-12-27 06:48:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'request_by.name' in 'field list'
+[Method: GET, Route: helpdesk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`', [], false)
+ 2 APPPATH\Models\HelpdeskTicketModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\HelpdeskController.php(26): App\Models\HelpdeskTicketModel->getTicketsWithDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2024-12-27 06:48:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'request_by.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`', [], false)
+ 4 APPPATH\Models\HelpdeskTicketModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\HelpdeskController.php(26): App\Models\HelpdeskTicketModel->getTicketsWithDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2024-12-27 06:48:31 --> [Caused by] mysqli_sql_exception: Unknown column 'request_by.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tickets`.*, `employees`.`name` as `pic_name`, `request_by`.`name` as `request_by_name`, `issue_owner`.`name` as `issue_owner_name`
+FROM `tickets`
+LEFT JOIN `employees` ON `employees`.`id` = `tickets`.`pic_id`
+LEFT JOIN `users` as `request_by` ON `request_by`.`id` = `tickets`.`request_by_id`
+LEFT JOIN `users` as `issue_owner` ON `issue_owner`.`id` = `tickets`.`issue_owner_id`', [], false)
+ 5 APPPATH\Models\HelpdeskTicketModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\HelpdeskController.php(26): App\Models\HelpdeskTicketModel->getTicketsWithDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2024-12-27 06:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 06:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 07:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 07:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 07:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 07:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 07:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 07:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 07:15:05 --> ErrorException: Undefined variable $employees
+[Method: GET, Route: helpdesk]
+in APPPATH\Views\helpdesk\index.php on line 117.
+ 1 APPPATH\Views\helpdesk\index.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\index.php', 117)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/index', [], true)
+ 5 APPPATH\Controllers\HelpdeskController.php(41): view('helpdesk/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2024-12-27 07:16:47 --> ErrorException: Undefined variable $request_by_list
+[Method: GET, Route: helpdesk]
+in APPPATH\Views\helpdesk\index.php on line 117.
+ 1 APPPATH\Views\helpdesk\index.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request_by_list', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\index.php', 117)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/index', [], true)
+ 5 APPPATH\Controllers\HelpdeskController.php(41): view('helpdesk/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2024-12-27 07:17:13 --> ErrorException: Undefined variable $employee
+[Method: GET, Route: helpdesk]
+in APPPATH\Views\helpdesk\index.php on line 118.
+ 1 APPPATH\Views\helpdesk\index.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\index.php', 118)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/index', [], true)
+ 5 APPPATH\Controllers\HelpdeskController.php(41): view('helpdesk/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2024-12-27 07:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-27 07:19:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:19:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:21:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:21:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:21:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:21:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:21:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2024-12-27 07:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-27 07:21:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$requestByModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+WARNING - 2024-12-27 07:21:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\HelpdeskController::$issueOwnerModel is deprecated in APPPATH\Controllers\HelpdeskController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\HelpdeskController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2024-12-27 07:26:46 --> ErrorException: Undefined property: App\Controllers\HelpdeskController::$requestByModel
+[Method: GET, Route: helpdesk]
+in APPPATH\Controllers\HelpdeskController.php on line 30.
+ 1 APPPATH\Controllers\HelpdeskController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\HelpdeskController::$requestByModel', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Controllers\\HelpdeskController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2024-12-27 07:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 07:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 08:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 10:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,310 @@
+INFO - 2025-01-13 01:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 01:38:51 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk - Copy\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk - Copy\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk - Copy\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk - Copy\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk - Copy\app\Controllers\AuthController.php(38): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk - Copy\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk - Copy\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk - Copy\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk - Copy\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk - Copy\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk - Copy\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk - Copy\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk - Copy\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk - Copy\app\Controllers\AuthController.php(38): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk - Copy\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk - Copy\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk - Copy\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk - Copy\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk - Copy\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-13 01:38:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(38): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2025-01-13 01:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 01:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 02:07:34 --> ErrorException: Undefined variable $subcategory
+[Method: GET, Route: user/settings/category/edit/1]
+in APPPATH\Views\settings\edit-category.php on line 18.
+ 1 APPPATH\Views\settings\edit-category.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subcategory', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\settings\\edit-category.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\settings\\edit-category.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('settings/edit-category', [], true)
+ 5 APPPATH\Controllers\CategoryController.php(52): view('settings/edit-category', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoryController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2025-01-13 02:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 02:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 07:29:00 --> ErrorException: Undefined array key "pic_name"
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 77.
+ 1 APPPATH\Views\helpdesk\admin.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pic_name"', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 07:31:35 --> ErrorException: Undefined array key "pic"
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 77.
+ 1 APPPATH\Views\helpdesk\admin.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pic"', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 77)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 07:31:42 --> ErrorException: Undefined array key "request_by_name"
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 78.
+ 1 APPPATH\Views\helpdesk\admin.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "request_by_name"', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 78)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 07:49:32 --> ErrorException: Undefined array key "pic"
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 82.
+ 1 APPPATH\Views\helpdesk\admin.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pic"', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 82)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2025-01-13 08:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 08:25:17 --> Error: Class "App\Controllers\UserModel" not found
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Controllers\HelpdeskController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->admin()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:33:52 --> ErrorException: Undefined variable $picList
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 89.
+ 1 APPPATH\Views\helpdesk\admin.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $picList', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:34:58 --> ErrorException: Undefined variable $picList
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 89.
+ 1 APPPATH\Views\helpdesk\admin.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $picList', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:38:14 --> ErrorException: Undefined variable $picList
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 89.
+ 1 APPPATH\Views\helpdesk\admin.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $picList', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:45:58 --> Error: Class "App\Models\TicketModel" not found
+[Method: GET, Route: user/helpdesk]
+in APPPATH\Controllers\HelpdeskController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:46:39 --> Error: Class "App\Controllers\TicketModel" not found
+[Method: GET, Route: user/helpdesk]
+in APPPATH\Controllers\HelpdeskController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:47:09 --> Error: Class "App\Controllers\TicketModel" not found
+[Method: GET, Route: user/helpdesk]
+in APPPATH\Controllers\HelpdeskController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:47:18 --> Error: Class "App\Controllers\TicketModel" not found
+[Method: GET, Route: user/helpdesk]
+in APPPATH\Controllers\HelpdeskController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:47:19 --> Error: Class "App\Controllers\TicketModel" not found
+[Method: GET, Route: user/helpdesk]
+in APPPATH\Controllers\HelpdeskController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+CRITICAL - 2025-01-13 08:51:32 --> ErrorException: Undefined variable $picList
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Views\helpdesk\admin.php on line 89.
+ 1 APPPATH\Views\helpdesk\admin.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $picList', 'C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Xampp\\htdocs\\helpdesk - Copy\\app\\Views\\helpdesk\\admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('helpdesk/admin', [], true)
+ 5 APPPATH\Controllers\HelpdeskAdminController.php(50): view('helpdesk/admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')
+INFO - 2025-01-13 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 09:10:24 --> Error: Class "App\Controllers\UserModel" not found
+[Method: GET, Route: helpdesk/admin]
+in APPPATH\Controllers\HelpdeskAdminController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskAdminController->admin()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskAdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk - Copy\\public\\index.php')

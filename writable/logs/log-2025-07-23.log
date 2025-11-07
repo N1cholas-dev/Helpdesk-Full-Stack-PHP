@@ -1,0 +1,634 @@
+INFO - 2025-07-23 03:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 03:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 03:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-23 04:02:13 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: login]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-23 04:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-23 04:14:12 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: login]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-23 04:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:15:16 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=16324 in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\Xampp\\htdocs...', 186)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:15:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-23 04:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-23 04:28:13 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: login]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-23 04:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-23 04:38:29 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: login]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-23 04:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:41:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:41:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-23 04:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:44:03 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=3772 in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\Xampp\\htdocs...', 186)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#15 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:44:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-23 04:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 04:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-23 04:56:52 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: login]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-23 04:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:56:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:56:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-23 04:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:57:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:57:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-23 04:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:57:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:57:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-23 04:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:57:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:57:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-23 04:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 04:57:14 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\Xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\Xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-23 04:57:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-07-23 08:08:24 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-07-23 08:08:24 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\helpdesk\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\helpdesk\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\helpdesk\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\helpdesk\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\helpdesk\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\helpdesk\system\Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\helpdesk\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\helpdesk\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-23 08:22:00 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-07-23 08:22:00 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\helpdesk\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\helpdesk\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\helpdesk\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\helpdesk\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\helpdesk\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\helpdesk\system\Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\helpdesk\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\helpdesk\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-07-23 08:29:24 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 190.
+ 1 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-07-23 08:29:24 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\helpdesk\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\helpdesk\system\HTTP\ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\helpdesk\system\HTTP\ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\helpdesk\system\Debug\ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\helpdesk\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\helpdesk\system\Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\helpdesk\system\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\helpdesk\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-23 06:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 06:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 06:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 06:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-23 06:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:35:07 --> Admin ID not found in session
+INFO - 2025-07-23 06:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:35:37 --> Admin ID not found in session
+INFO - 2025-07-23 06:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:36:07 --> Admin ID not found in session
+INFO - 2025-07-23 06:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:36:38 --> Admin ID not found in session
+INFO - 2025-07-23 06:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:37:08 --> Admin ID not found in session
+INFO - 2025-07-23 06:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:37:38 --> Admin ID not found in session
+INFO - 2025-07-23 06:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:38:08 --> Admin ID not found in session
+INFO - 2025-07-23 06:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:38:38 --> Admin ID not found in session
+INFO - 2025-07-23 06:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:39:16 --> Admin ID not found in session
+INFO - 2025-07-23 06:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:40:16 --> Admin ID not found in session
+INFO - 2025-07-23 06:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:41:16 --> Admin ID not found in session
+INFO - 2025-07-23 06:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:42:16 --> Admin ID not found in session
+INFO - 2025-07-23 06:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:43:16 --> Admin ID not found in session
+INFO - 2025-07-23 06:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:44:20 --> Admin ID not found in session
+INFO - 2025-07-23 06:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:45:16 --> Admin ID not found in session
+INFO - 2025-07-23 06:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:46:21 --> Admin ID not found in session
+INFO - 2025-07-23 06:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:47:23 --> Admin ID not found in session
+INFO - 2025-07-23 06:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-23 06:51:54 --> Admin ID not found in session

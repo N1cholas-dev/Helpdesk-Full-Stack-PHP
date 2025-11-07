@@ -1,0 +1,542 @@
+INFO - 2025-07-24 07:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:14:13 --> Admin ID not found in session
+INFO - 2025-07-24 07:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:14:42 --> Admin ID not found in session
+INFO - 2025-07-24 07:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:15:00 --> Admin ID not found in session
+INFO - 2025-07-24 07:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:15:44 --> Admin ID not found in session
+INFO - 2025-07-24 07:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:15:59 --> Admin ID not found in session
+INFO - 2025-07-24 07:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:16:29 --> Admin ID not found in session
+INFO - 2025-07-24 07:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:16:59 --> Admin ID not found in session
+INFO - 2025-07-24 07:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:17:29 --> Admin ID not found in session
+INFO - 2025-07-24 07:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:17:59 --> Admin ID not found in session
+INFO - 2025-07-24 07:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:18:29 --> Admin ID not found in session
+INFO - 2025-07-24 07:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:19:30 --> Admin ID not found in session
+INFO - 2025-07-24 07:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:20:31 --> Admin ID not found in session
+INFO - 2025-07-24 07:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:21:18 --> Admin ID not found in session
+INFO - 2025-07-24 07:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:21:40 --> Admin ID not found in session
+INFO - 2025-07-24 07:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:21:47 --> Admin ID not found in session
+INFO - 2025-07-24 07:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:21:59 --> Admin ID not found in session
+INFO - 2025-07-24 07:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:22:29 --> Admin ID not found in session
+INFO - 2025-07-24 07:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:22:35 --> Admin ID not found in session
+INFO - 2025-07-24 07:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:22:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:23:13 --> Admin ID not found in session
+INFO - 2025-07-24 07:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:23:36 --> Admin ID not found in session
+INFO - 2025-07-24 07:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:24:07 --> Admin ID not found in session
+INFO - 2025-07-24 07:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:24:37 --> Admin ID not found in session
+INFO - 2025-07-24 07:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:25:07 --> Admin ID not found in session
+INFO - 2025-07-24 07:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:25:37 --> Admin ID not found in session
+INFO - 2025-07-24 07:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:26:07 --> Admin ID not found in session
+INFO - 2025-07-24 07:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:26:32 --> mysqli_sql_exception: Not unique table/alias: 'subjects' in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `helpdes...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `helpdes...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `helpdes...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `helpdes...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\helpdesk\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\HelpdeskUserController.php(129): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\HelpdeskUserController->helpdesk()
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskUserController))
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-07-24 07:26:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'subjects'
+[Method: GET, Route: USER/helpdesk/helpdesk-user]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = :helpdesk_tickets.request_by_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HelpdeskUserController.php(129): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskUserController->helpdesk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskUserController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-07-24 07:26:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'subjects'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = \'52\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = \'52\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = :helpdesk_tickets.request_by_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\HelpdeskUserController.php(129): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskUserController->helpdesk()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskUserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-07-24 07:26:32 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'subjects'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = \'52\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = \'52\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = \'52\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `helpdesk_tickets`.*, `subjects`.`description` AS `subject_name`, `problems`.`description` AS `problem_description`, `categories`.`name` AS `category_name`, `subcategories`.`name` AS `subcategory_name`, `departments`.`name` AS `department_name`, `ticket_feedback`.`rating` AS `ticket_rating`, `ticket_feedback`.`comment` AS `ticket_comment`, `employees`.`name` AS `request_by_name`
+FROM `helpdesk_tickets`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `subjects` ON `subjects`.`id` = `helpdesk_tickets`.`subject_id`
+LEFT JOIN `problems` ON `problems`.`id` = `helpdesk_tickets`.`problem_id`
+LEFT JOIN `categories` ON `categories`.`id` = `helpdesk_tickets`.`category_id`
+LEFT JOIN `subcategories` ON `subcategories`.`id` = `helpdesk_tickets`.`subcategory_id`
+LEFT JOIN `departments` ON `departments`.`id` = `helpdesk_tickets`.`department_id`
+LEFT JOIN `ticket_feedback` ON `ticket_feedback`.`ticket_id` = `helpdesk_tickets`.`id`
+LEFT JOIN `employees` ON `employees`.`id` = `helpdesk_tickets`.`request_by_id`
+WHERE `helpdesk_tickets`.`request_by_id` = :helpdesk_tickets.request_by_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HelpdeskUserController.php(129): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HelpdeskUserController->helpdesk()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HelpdeskUserController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-07-24 07:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:27:18 --> Admin ID not found in session
+INFO - 2025-07-24 07:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:27:48 --> Admin ID not found in session
+INFO - 2025-07-24 07:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:28:18 --> Admin ID not found in session
+INFO - 2025-07-24 07:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:28:48 --> Admin ID not found in session
+INFO - 2025-07-24 07:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:29:18 --> Admin ID not found in session
+INFO - 2025-07-24 07:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:29:48 --> Admin ID not found in session
+INFO - 2025-07-24 07:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:30:18 --> Admin ID not found in session
+INFO - 2025-07-24 07:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:30:24 --> Admin ID not found in session
+INFO - 2025-07-24 07:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:30:39 --> Admin ID not found in session
+INFO - 2025-07-24 07:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:31:11 --> Admin ID not found in session
+INFO - 2025-07-24 07:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:31:41 --> Admin ID not found in session
+INFO - 2025-07-24 07:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:32:11 --> Admin ID not found in session
+INFO - 2025-07-24 07:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:32:41 --> Admin ID not found in session
+INFO - 2025-07-24 07:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:33:11 --> Admin ID not found in session
+INFO - 2025-07-24 07:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:33:41 --> Admin ID not found in session
+INFO - 2025-07-24 07:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:34:11 --> Admin ID not found in session
+INFO - 2025-07-24 07:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:34:41 --> Admin ID not found in session
+INFO - 2025-07-24 07:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:35:42 --> Admin ID not found in session
+INFO - 2025-07-24 07:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:36:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:37:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:38:27 --> Admin ID not found in session
+INFO - 2025-07-24 07:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:38:37 --> Admin ID not found in session
+INFO - 2025-07-24 07:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:38:50 --> Admin ID not found in session
+INFO - 2025-07-24 07:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:39:09 --> Admin ID not found in session
+INFO - 2025-07-24 07:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:39:40 --> Admin ID not found in session
+INFO - 2025-07-24 07:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:40:10 --> Admin ID not found in session
+INFO - 2025-07-24 07:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:40:40 --> Admin ID not found in session
+INFO - 2025-07-24 07:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:41:10 --> Admin ID not found in session
+INFO - 2025-07-24 07:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:41:40 --> Admin ID not found in session
+INFO - 2025-07-24 07:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:42:10 --> Admin ID not found in session
+INFO - 2025-07-24 07:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:42:40 --> Admin ID not found in session
+INFO - 2025-07-24 07:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:43:41 --> Admin ID not found in session
+INFO - 2025-07-24 07:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:44:42 --> Admin ID not found in session
+INFO - 2025-07-24 07:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:45:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:46:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:47:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:48:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:49:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:50:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:51:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:52:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:53:33 --> Admin ID not found in session
+INFO - 2025-07-24 07:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:53:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:54:12 --> Admin ID not found in session
+INFO - 2025-07-24 07:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:54:56 --> Admin ID not found in session
+INFO - 2025-07-24 07:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:55:14 --> Admin ID not found in session
+INFO - 2025-07-24 07:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:55:44 --> Admin ID not found in session
+INFO - 2025-07-24 07:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:56:14 --> Admin ID not found in session
+INFO - 2025-07-24 07:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:56:43 --> Admin ID not found in session
+INFO - 2025-07-24 07:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:56:56 --> Admin ID not found in session
+INFO - 2025-07-24 07:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:57:26 --> Admin ID not found in session
+INFO - 2025-07-24 07:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:57:28 --> Admin ID not found in session
+INFO - 2025-07-24 07:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:57:57 --> Admin ID not found in session
+INFO - 2025-07-24 07:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:58:27 --> Admin ID not found in session
+INFO - 2025-07-24 07:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:58:47 --> Admin ID not found in session
+INFO - 2025-07-24 07:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 07:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 07:59:47 --> Admin ID not found in session
+INFO - 2025-07-24 07:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:00:01 --> Admin ID not found in session
+INFO - 2025-07-24 08:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:00:19 --> Admin ID not found in session
+INFO - 2025-07-24 08:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:00:49 --> Admin ID not found in session
+INFO - 2025-07-24 08:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:00:55 --> Admin ID not found in session
+INFO - 2025-07-24 08:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:01:28 --> Admin ID not found in session
+INFO - 2025-07-24 08:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:01:56 --> Admin ID not found in session
+INFO - 2025-07-24 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:02:56 --> Admin ID in session: 1
+INFO - 2025-07-24 08:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:03:07 --> Admin ID in session: 1
+INFO - 2025-07-24 08:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:03:37 --> Admin ID in session: 1
+INFO - 2025-07-24 08:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:03:47 --> Admin ID in session: 1
+INFO - 2025-07-24 08:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:04:16 --> Admin ID in session: 1
+INFO - 2025-07-24 08:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:04:46 --> Admin ID in session: 1
+INFO - 2025-07-24 08:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:05:16 --> Admin ID in session: 1
+INFO - 2025-07-24 08:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:05:46 --> Admin ID in session: 1
+INFO - 2025-07-24 08:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:06:16 --> Admin ID in session: 1
+INFO - 2025-07-24 08:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:06:47 --> Admin ID in session: 1
+INFO - 2025-07-24 08:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:07:17 --> Admin ID in session: 1
+INFO - 2025-07-24 08:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:08:18 --> Admin ID in session: 1
+INFO - 2025-07-24 08:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:09:19 --> Admin ID in session: 1
+INFO - 2025-07-24 08:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:10:20 --> Admin ID in session: 1
+INFO - 2025-07-24 08:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:11:21 --> Admin ID in session: 1
+INFO - 2025-07-24 08:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:12:22 --> Admin ID in session: 1
+INFO - 2025-07-24 08:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:13:23 --> Admin ID in session: 1
+INFO - 2025-07-24 08:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:18:30 --> Admin ID in session: 1
+INFO - 2025-07-24 08:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:18:46 --> Admin ID in session: 1
+INFO - 2025-07-24 08:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:19:17 --> Admin ID in session: 1
+INFO - 2025-07-24 08:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:19:47 --> Admin ID in session: 1
+INFO - 2025-07-24 08:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:20:17 --> Admin ID in session: 1
+INFO - 2025-07-24 08:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:21:18 --> Admin ID in session: 1
+INFO - 2025-07-24 08:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:22:19 --> Admin ID in session: 1
+INFO - 2025-07-24 08:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:23:20 --> Admin ID in session: 1
+INFO - 2025-07-24 08:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:24:21 --> Admin ID in session: 1
+INFO - 2025-07-24 08:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:25:22 --> Admin ID in session: 1
+INFO - 2025-07-24 08:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:26:23 --> Admin ID in session: 1
+INFO - 2025-07-24 08:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:27:24 --> Admin ID in session: 1
+INFO - 2025-07-24 08:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:27:56 --> Admin ID in session: 1
+INFO - 2025-07-24 08:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:28:07 --> Admin ID not found in session
+INFO - 2025-07-24 08:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 08:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:28:11 --> Admin ID not found in session
+INFO - 2025-07-24 08:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:28:41 --> Admin ID not found in session
+INFO - 2025-07-24 08:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:29:12 --> Admin ID not found in session
+INFO - 2025-07-24 08:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:29:42 --> Admin ID not found in session
+INFO - 2025-07-24 08:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:30:12 --> Admin ID not found in session
+INFO - 2025-07-24 08:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:30:42 --> Admin ID not found in session
+INFO - 2025-07-24 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:31:12 --> Admin ID not found in session
+INFO - 2025-07-24 08:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:31:42 --> Admin ID not found in session
+INFO - 2025-07-24 08:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:32:43 --> Admin ID not found in session
+INFO - 2025-07-24 08:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:33:43 --> Admin ID not found in session
+INFO - 2025-07-24 08:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:34:43 --> Admin ID not found in session
+INFO - 2025-07-24 08:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:35:43 --> Admin ID not found in session
+INFO - 2025-07-24 08:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 08:36:43 --> Admin ID not found in session
+INFO - 2025-07-24 13:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-24 13:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

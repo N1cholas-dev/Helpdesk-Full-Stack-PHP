@@ -1,0 +1,76 @@
+INFO - 2025-05-14 14:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 14:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 14:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 14:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-14 14:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:14:51 --> Admin ID in session: 1
+INFO - 2025-05-14 14:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:15:20 --> Admin ID in session: 1
+INFO - 2025-05-14 14:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:15:51 --> Admin ID in session: 1
+INFO - 2025-05-14 14:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:16:21 --> Admin ID in session: 1
+INFO - 2025-05-14 14:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:16:50 --> Admin ID in session: 1
+INFO - 2025-05-14 14:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:17:20 --> Admin ID in session: 1
+INFO - 2025-05-14 14:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:18:10 --> Admin ID in session: 1
+INFO - 2025-05-14 14:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:18:50 --> Admin ID in session: 1
+INFO - 2025-05-14 14:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:19:20 --> Admin ID in session: 1
+INFO - 2025-05-14 14:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:19:51 --> Admin ID in session: 1
+INFO - 2025-05-14 14:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:20:52 --> Admin ID in session: 1
+INFO - 2025-05-14 14:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:21:52 --> Admin ID in session: 1
+INFO - 2025-05-14 14:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:22:53 --> Admin ID in session: 1
+INFO - 2025-05-14 14:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:23:54 --> Admin ID in session: 1
+INFO - 2025-05-14 14:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:24:56 --> Admin ID in session: 1
+INFO - 2025-05-14 14:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:25:56 --> Admin ID in session: 1
+INFO - 2025-05-14 14:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:26:57 --> Admin ID in session: 1
+INFO - 2025-05-14 14:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:27:58 --> Admin ID in session: 1
+INFO - 2025-05-14 14:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:28:59 --> Admin ID in session: 1
+INFO - 2025-05-14 14:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:30:00 --> Admin ID in session: 1
+INFO - 2025-05-14 14:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:31:02 --> Admin ID in session: 1
+INFO - 2025-05-14 14:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:32:03 --> Admin ID in session: 1
+INFO - 2025-05-14 14:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:33:03 --> Admin ID in session: 1
+INFO - 2025-05-14 14:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:34:05 --> Admin ID in session: 1
+INFO - 2025-05-14 14:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:35:05 --> Admin ID in session: 1
+INFO - 2025-05-14 14:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:36:06 --> Admin ID in session: 1
+INFO - 2025-05-14 14:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:37:08 --> Admin ID in session: 1
+INFO - 2025-05-14 14:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:38:08 --> Admin ID in session: 1
+INFO - 2025-05-14 14:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:39:09 --> Admin ID in session: 1
+INFO - 2025-05-14 14:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:40:10 --> Admin ID in session: 1
+INFO - 2025-05-14 14:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:41:10 --> Admin ID in session: 1
+INFO - 2025-05-14 14:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:42:10 --> Admin ID in session: 1
+INFO - 2025-05-14 14:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:43:10 --> Admin ID in session: 1
+INFO - 2025-05-14 14:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:44:10 --> Admin ID in session: 1
+INFO - 2025-05-14 14:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:49:34 --> Admin ID in session: 1
+INFO - 2025-05-14 14:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 14:49:50 --> Admin ID in session: 1

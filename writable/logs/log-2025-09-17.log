@@ -1,0 +1,1503 @@
+INFO - 2025-09-17 11:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 11:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 11:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:35:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\helpdesk\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\helpdesk\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-09-17 11:35:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(40): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 11:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 11:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:36:07 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:36:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: GET, Route: DOCUMENTATION%20IT/dashboard/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home', 'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'2025-09-17 18:36:07\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'2025-09-17 18:36:07\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home', 'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:07 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'2025-09-17 18:36:07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'2025-09-17 18:36:07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home\', \'2025-09-17 18:36:07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/DOCUMENTATION%20IT/dashboard/home', 'http://localhost:8080/DOCUMENTATION%20IT/dashboard/home')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:36:16 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(67): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:36:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(67): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/login', 'http://localhost:8080/login')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:16\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:16\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(67): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/login', 'http://localhost:8080/login')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:16 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(67): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/login', 'http://localhost:8080/login')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:36:22 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:36:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: GET, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/login', 'http://localhost:8080/login')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:22\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:22\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/login', 'http://localhost:8080/login')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:22 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:22\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:22\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/login\', \'http://localhost:8080/login\', \'2025-09-17 18:36:22\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/login', 'http://localhost:8080/login')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:36:28 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:36:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:36:28\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:36:28\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:36:28 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:36:28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:36:28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:36:28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:46:03 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:46:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:46:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:46:03\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:46:03\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:46:03 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:46:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:46:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:46:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:47:34 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:47:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:47:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:34\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:34\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:47:34 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:47:38 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:47:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:47:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:38\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:38\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:47:38 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:47:38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:48:27 --> mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:48:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:48:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:48:27\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:48:27\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:48:27 --> [Caused by] mysqli_sql_exception: Table 'helpdesk.activity_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:48:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:48:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:48:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:54:34 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:54:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:34\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:34\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:34 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:54:38 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:54:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:38\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:38\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:38 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:54:47 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:54:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:47\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:47\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:47 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:54:48 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:54:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:48\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:48\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:54:48 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:48\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:48\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:54:48\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:56:19 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:56:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:19\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:19\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:19 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:56:21 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:56:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:21\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:21\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:21 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:56:22 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:56:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:22\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:22\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:22 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:22\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:22\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:22\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:56:27 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:56:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:27\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:27\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:56:27 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:56:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:57:02 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:57:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:57:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:02\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:02\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:57:02 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:57:03 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:57:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:57:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:03\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:03\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:57:03 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 11:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 11:57:04 --> mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-09-17 11:57:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 2 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 4 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:57:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:04\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:04\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 4 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 6 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+CRITICAL - 2025-09-17 11:57:04 --> [Caused by] mysqli_sql_exception: Got error 194 "Tablespace is missing for a table" from storage engine InnoDB
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:04\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:04\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (\'1\', \'ADMIN\', \'NAVIGATE\', \'Accessed page: http://localhost:8080/\', \'http://localhost:8080/\', \'2025-09-17 18:57:04\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 5 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 7 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 9 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 12:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 12:01:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#6 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-09-17 12:01:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 3 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 5 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 7 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 12:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-17 12:02:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'helpdesk', 3306, '', 0)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#6 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\helpdesk\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\helpdesk\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\helpdesk\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#3 C:\xampp\htdocs\helpdesk\app\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: ...', 'http://localhos...')
+#5 C:\xampp\htdocs\helpdesk\app\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+#6 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+#8 C:\xampp\htdocs\helpdesk\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\helpdesk\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\helpdesk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\helpdesk\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\helpdesk\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-09-17 12:02:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `activity_logs` (`user_id`, `role`, `action`, `details`, `url_accessed`, `created_at`) VALUES (:user_id:, :role:, :action:, :details:, :url_accessed:, :created_at:)', [...], false)
+ 3 APPPATH\Helpers\logActivity_helper.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\BaseController.php(98): logActivity('NAVIGATE', 'Accessed page: http://localhost:8080/', 'http://localhost:8080/')
+ 5 APPPATH\Controllers\BaseController.php(19): App\Controllers\BaseController->autoLogActivity()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 7 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\helpdesk\\public\\index.php')
+INFO - 2025-09-17 12:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 12:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 12:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 12:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:05:14 --> Admin ID in session: 1
+INFO - 2025-09-17 12:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:05:43 --> Admin ID in session: 1
+INFO - 2025-09-17 12:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:06:13 --> Admin ID in session: 1
+INFO - 2025-09-17 12:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-17 12:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:06:44 --> Admin ID in session: 1
+INFO - 2025-09-17 12:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:07:13 --> Admin ID in session: 1
+INFO - 2025-09-17 12:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:07:44 --> Admin ID in session: 1
+INFO - 2025-09-17 12:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:08:14 --> Admin ID in session: 1
+INFO - 2025-09-17 12:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:08:44 --> Admin ID in session: 1
+INFO - 2025-09-17 12:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:09:14 --> Admin ID in session: 1
+INFO - 2025-09-17 12:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:09:44 --> Admin ID in session: 1
+INFO - 2025-09-17 12:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:10:14 --> Admin ID in session: 1
+INFO - 2025-09-17 12:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:11:15 --> Admin ID in session: 1
+INFO - 2025-09-17 12:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:12:16 --> Admin ID in session: 1
+INFO - 2025-09-17 12:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:13:17 --> Admin ID in session: 1
+INFO - 2025-09-17 12:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:14:18 --> Admin ID in session: 1
+INFO - 2025-09-17 12:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:15:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:16:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:17:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:18:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:19:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:20:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:21:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:22:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:23:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:24:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:25:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:26:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:27:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:28:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:29:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:30:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:31:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:32:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:33:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:34:38 --> Admin ID in session: 1
+INFO - 2025-09-17 12:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:35:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:36:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:37:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:38:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:39:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:40:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:41:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:42:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:43:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:44:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:45:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:46:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:47:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:48:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:49:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:51:36 --> Admin ID in session: 1
+INFO - 2025-09-17 12:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:52:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:53:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:54:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:55:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:56:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:57:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:58:19 --> Admin ID in session: 1
+INFO - 2025-09-17 12:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 12:59:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:00:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:01:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:02:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:03:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:04:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:05:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:06:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:07:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:08:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:09:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:10:19 --> Admin ID in session: 1
+INFO - 2025-09-17 13:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-17 13:11:19 --> Admin ID in session: 1
